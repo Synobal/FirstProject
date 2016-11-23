@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"/>
+<script>
+var asciiMessage = "Test";
+stringLength = asciiMessage.length
+var n = false;
+var finalString = ""; 
+var stringLengthVarying = stringLength;
+
+
+            for (var i = stringLength; i > 0; i--) {
+              n = asciiMessage.indexOf("a", i);
+              if (n == true) {
+              finalString = finalString + " " + "01100001";
+              } else {
+               console.log("not a");
+               }
+               
+               
+               
+               
+               
+               
