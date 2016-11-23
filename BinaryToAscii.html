@@ -9,16 +9,39 @@ var finalString = "";
 var stringLengthVarying = stringLength;
 
 
-            for (var i = stringLength; i > 0; i--) {
-              n = asciiMessage.indexOf("a", i);
+            for (var i = stringLength; i > 0; i = i - 8) {
+              n = asciiMessage.indexOf("01100001", i);
               if (n == true) {
-              finalString = finalString + " " + "01100001";
+              finalString = finalString + " " + "a";
               } else {
                console.log("not a");
                }
-               
-               
-               
-               
+               n = asciiMessage.indexOf("01100010", i);       
+               if (n == true) {         
+               finalString = finalString + " " + "b";         
+               } else {         
+                 console.log("not b"); 
+               }
+               n = asciiMessage.indexOf("01100011", i);           
+               if (n == true) {         
+               finalString = finalString + " " + "c";         
+               } else {
+               console.log("not b");
+               }
+               n = asciiMessage.indexOf("01100100", i);          
+               if (n == true) {
+               finalString = finalString + " " + "d";
+               } else {
+               console.log("not d");
+               }
+                        
+                           
+                           
+                           
+                           
+                           
+                           
+                           
+                           
                
                
